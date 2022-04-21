@@ -8,20 +8,17 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-            <div class="p-6 bg-white border-b border-gray-200">
+                <div class="p-6 bg-white border-b border-gray-200">
                     <div class="szakdolgozatoklistazasa">
                         Admin oldal
                         <div class="listaadmin">
                             <div class="fejlec">
-                                <div class="szakdogacime">Szakdolgozat címe</div>
-                                <div class="tagok">Készítők neve</div>
-                                <div class="githublink">GitHub link</div>
-                                <div class="oldallink">Szakdolgozat elérhetősége</div>
-
+                                <div class="alFejlec szakdogacime">Szakdolgozat címe</div>
+                                <div class="alFejlec tagok">Készítők neve</div>
+                                <div class="alFejlec githublink">GitHub link</div>
+                                <div class="alFejlec oldallink">Szakdolgozat elérhetősége</div>
+                                <div class="alFejlec ikon"></div>
                             </div>
-
-
-
 
                         </div>
                     </div>
@@ -33,7 +30,6 @@
                             <div class="sor"><label for="oldallink">Az oldal elérhetősége </label><input type="text" id="oldallink"></div>
                             <div class="sor"><label for="githublink"> GitHub elérhetőség</label><input type="text" id="githublink"></div>
                             <div class="gomb"><button id="uj">Új</button>
-                                <button id="modosit">Módosít</button>
                             </div>
                         </form>
                     </div>

@@ -15,6 +15,7 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+require __DIR__ . '/auth.php';
 
 
 Route::get('/', function () {
@@ -25,6 +26,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__ . '/auth.php';
-
-require __DIR__ . '/auth.php';
+Route::get('/api/szakdogak', [SzakdogaController::class, 'index']);
+Route::post('/api/szakdogak', [SzakdogaController::class,'store']);
+Route::put('api/szakdogak/{id}', [SzakdogaController::class,'update']);
+Route::delete('api/szakdogak/{id}',[SzakdogaController::class,'destroy']);

@@ -1,0 +1,126 @@
+.kozepre,
+.galeria img {
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fejlec {
+    display: flex;
+    height: 6rem;
+    text-align: left;
+    width: 100%;
+}
+
+.alFejlec {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.listaadatok {
+    display: flex;
+    height: 6rem;
+    text-align: left;
+    width: 100%;
+}
+
+.listaadatok .adat {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.listaadatok .ikon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.ujadat form .sor input {
+    width: 70%;
+}
+
+.ujadat form .sor {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.ujadat form .sor label {
+    display: block;
+    width: 20%;
+    margin: 1rem;
+    text-align: right;
+}
+
+.ikon .modosit {
+    background-image: url("../edit-icon.png");
+    width: 20px;
+    height: 20px;
+}
+
+.ikon .torol {
+    background-image: url("../cross-icon.png");
+    width: 20px;
+    height: 20px;
+}
+
+.katt {
+    background-color: aliceblue;
+    margin-left: 50px;
+    width: 4rem;
+    height: 3rem;
+    border: 1px solid lightblue;
+}
+
+#uj {
+    border: 1px solid black;
+    padding: 0.5rem;
+    background-color: aliceblue;
+    width: 7rem;
+    border-radius: 0.5rem;
+}
+
+.gomb {
+    text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    .fejlec {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        height:100px;
+    }
+    .alFejlec:nth-child(5){
+        display:none;
+    }
+    .listaadatok {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        height:100px;
+    }
+
+    .ujadat form .sor {
+        display:block;
+    }
+
+    .ujadat label {
+        margin-bottom:0!important;
+        margin-left:0!important;
+        text-align:left!important;
+    }
+}
